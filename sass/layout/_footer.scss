@@ -1,0 +1,13 @@
+.footer {
+  background: $colour-primary;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  @include vertical-center-text($footer-height); // doit aller dans typo
+  &__link-right, &__link-left {
+    font-size: $footer-font-size; // doit aller dans typo
+    margin: 0 35px;
+  }
+}

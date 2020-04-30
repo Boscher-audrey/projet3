@@ -1,0 +1,10 @@
+.header {
+  background: $colour-primary;
+  display: flex;
+  width: 100%;
+  @include vertical-center-text($header-height); // doit aller dans typo
+  &__logo {
+    margin: auto;
+    font-size: $header-font-size; // doit aller dans typo
+  }
+}

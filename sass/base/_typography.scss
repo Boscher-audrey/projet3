@@ -1,0 +1,145 @@
+$font-family__menu-1: 'Devonshire', cursive;
+$font-family__menu-2: 'Croissant One', cursive;
+$font-family__menu-3: 'Dancing Script', cursive;
+$font-family__menu-4: 'Kaushan Script', cursive;
+$font-family-secondary__menu-1: 'Segoe Print', sans-serif;
+$font-family-secondary__menu-2: 'Georgia', serif;
+$font-family-secondary__menu-3: 'Segoe Print', sans-serif;
+$font-family-secondary__menu-4: 'Segoe Print', sans-serif;
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: $colour-secondary !important;
+}
+
+// ------------
+// Index
+// ------------
+
+.menu-index {
+  &-1 {
+    color: $colour-text-menu-1;
+
+    & h1 {
+      font-family: $font-family-secondary__menu-1;
+      font-size: 1.5rem;
+    }
+
+    & h2 {
+      font-family: $font-family__menu-1;
+      font-size: 1.5rem;
+      font-weight: normal;
+    }
+
+    &__image i {
+      @include text_linear-gradient($colour-music-primary, $colour-music-secondary)
+    }
+  }
+
+  &-2 {
+    & h1 {
+      font-family: $font-family-secondary__menu-2;
+      color: $colour-text-menu-2-primary;
+      font-size: 1.5rem;
+    }
+
+    & h2 {
+      font-family: $font-family__menu-2;
+      font-weight: normal;
+      font-size: 1rem;
+      @include text_linear-gradient($colour-text-menu-2-primary, $colour-text-menu-2-secondary)
+    }
+  }
+
+  &-3 {
+    & h1 {
+      font-family: $font-family-secondary__menu-3;
+      font-weight: normal;
+      font-size: 1.5rem;
+      color: $colour-text-menu-3-secondary;
+    }
+
+    & h2 {
+      font-family: $font-family__menu-3;
+      font-weight: normal;
+      font-size: 1.5rem;
+      @include text_linear-gradient($colour-text-menu-3-primary, $colour-text-menu-3-secondary)
+    }
+  }
+
+  &-4 {
+    & h1 {
+      font-family: $font-family-secondary__menu-4;
+      font-weight: normal;
+      font-size: 1.5rem;
+      color: lighten($colour-text-menu-4-primary, 20%);
+    }
+
+    & h2 {
+      font-family: $font-family__menu-4;
+      font-weight: normal;
+      font-size: 1.5rem;
+      @include text_linear-gradient($colour-text-menu-4-primary, $colour-text-menu-4-secondary)
+    }
+  }
+}
+
+// ------------
+// Menu 1
+// ------------
+
+.menu-1 {
+  color: $colour-text-menu-1;
+
+  &__heading {
+    color: $colour-text-menu-1;
+  }
+
+  & h1 {
+    font-family: $font-family__menu-1;
+    font-size: 2.3rem;
+    font-weight: normal;
+  }
+
+  & h2 {
+    font-family: $font-family-secondary__menu-1;
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+
+  & h3 {
+    font-family: $font-family__menu-1;
+    font-size: 1.6rem;
+    font-weight: normal;
+  }
+
+  & i {
+    @include text_linear-gradient($colour-music-primary, $colour-music-secondary)
+  }
+}
+
+// ------------
+// Menu 2
+// ------------
+
+.menu-2 {
+
+  &__heading {
+
+  }
+
+  & h1 {
+    font-family: $font-family__menu-2;
+    font-size: 2.3rem;
+    font-weight: normal;
+  }
+
+  & h2 {
+    font-family: $font-family-secondary__menu-2;
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+
+
+}

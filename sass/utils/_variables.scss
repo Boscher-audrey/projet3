@@ -1,0 +1,36 @@
+$colour-primary: #579c87;
+$colour-secondary: #fdcb46;
+$colour-menu-1: #fcdfdb;
+$colour-text-menu-1: black;
+$colour-text-menu-2-primary: #c77412;
+$colour-text-menu-2-secondary: #905bfd;
+$colour-text-menu-3-primary: #0431df;
+$colour-text-menu-3-secondary: #1b91fa;
+$colour-text-menu-4-primary: #3d9339;
+$colour-text-menu-4-secondary: #bfff7e;
+$colour-menu-2: #fff5fe;
+$colour-menu-3: #f9f9f9;
+$colour-menu-4: #fdfffd;
+$colour-music-primary: #f04a5e;
+$colour-music-secondary: #f78f6a;
+
+$header-height: 120px;
+$header-font-size: 3rem;
+
+$footer-height: $header-height/1.7;
+$footer-font-size: $header-font-size/1.7;
+
+$menu-grid-height: 600px;
+$prochainement_margin: $footer-height + 50px;
+
+@media (max-width: 767px) {
+  $header-height: 15vh;
+  $rm-header-unit: mr-remove-unit($header-height);
+  $header-font-size: ($rm-header-unit/2)*0.8vh;
+  $header-min-height: 70px;
+
+  $footer-height: ($rm-header-unit/1.5)*1vh;
+  $rm-footer-unit: mr-remove-unit($footer-height);
+  $footer-font-size: ($rm-footer-unit/2.5)*0.8vh;
+  $footer-min-height: 45px;
+}

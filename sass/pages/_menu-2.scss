@@ -1,0 +1,18 @@
+.menu-2 {
+  background: $colour-menu-2;
+  padding: 45px 70px;
+
+  &-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: $menu-grid-height;
+    margin-top: 55px;
+  }
+
+  & h1, h2, h3 {
+    text-align: center;
+  }
+
+
+}

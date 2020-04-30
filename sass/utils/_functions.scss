@@ -1,0 +1,17 @@
+@function mr-remove-unit($target) {
+  $one: 1;
+  //find out the unit of measurement being used
+  @if (unit($target) == "px") {
+    $one: 1px;
+  } @else if (unit($target) == "em") {
+    $one: 1em;
+  } @else if (unit($target) == "%") {
+    $one: 1%;
+  } @else if (unit($target) == "vh") {
+    $one: 1vh;
+  } @else if (unit($target) == "vw") {
+    $one: 1vw;
+  }
+  // dividing by the same unit forces sass to return a value with no unit
+  @return $target / $one ;
+}

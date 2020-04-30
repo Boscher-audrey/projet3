@@ -1,0 +1,96 @@
+.menu {
+  &-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: $menu-grid-height;
+  }
+
+  &-index {
+    height: 360px;
+    width: 260px;
+    text-align: center;
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      line-height: 45px;
+      font-size: 0.8rem;
+      height: -webkit-fill-available;
+      @include box_shadow;
+    }
+
+    &-1 {
+      background: $colour-menu-1;
+    }
+
+    &-2 {
+      background: $colour-menu-2;
+    }
+
+    &-3 {
+      background: $colour-menu-3;
+    }
+
+    &-4 {
+      background: $colour-menu-4;
+    }
+  }
+}
+
+
+.menu-index-1__image {
+  line-height: 0;
+  margin-bottom: -10px;
+  & i {
+    font-size: 25px;
+  }
+}
+
+.prochainement {
+  margin-bottom: $prochainement_margin;
+
+  &__btn {
+    text-align: center;
+    margin: auto;
+    width: 300px;
+    border: 1px solid $colour-primary;
+    border-radius: 10px;
+    background-color: $colour-primary;
+    @include vertical-center-text(45px);
+
+    &-text {
+      font-size: 1.5rem;
+    }
+
+    &-dot {
+      display:inline-block;
+      width:5px;
+      height:5px;
+      border-radius:50%;
+      margin-left:3px;
+      background: $colour-secondary;
+      animation: wave 1.2s linear infinite;
+
+      &:nth-child(2) {
+        animation-delay: -1s;
+      }
+
+      &:nth-child(3) {
+        animation-delay: -0.8s;
+      }
+    }
+  }
+}
+
+@keyframes wave {
+  0%, 50%, 100% {
+    transform: initial;
+  }
+
+  30% {
+    transform: translateY(-8px);
+  }
+}

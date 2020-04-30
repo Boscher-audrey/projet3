@@ -1,0 +1,26 @@
+.menu-1 {
+  background: $colour-menu-1;
+  padding: 45px 70px;
+
+  &-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: $menu-grid-height;
+    margin-top: 55px;
+  }
+
+  & h1, h2, h3 {
+    text-align: center;
+  }
+
+  &__image {
+    line-height: 0;
+    text-align: center;
+
+    & i {
+      font-size: 65px;
+    }
+  }
+
+}

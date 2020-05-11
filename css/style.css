@@ -353,7 +353,7 @@ body {
   padding: 50px 0 10px;
 }
 .menu-1__subtitle:before, .menu-1__subtitle:after {
-  content: url("/public/img/ligne_menu1.png");
+  content: url("../public/img/ligne_menu1.png");
 }
 .menu-1__subtitle:before {
   float: left;
@@ -421,7 +421,7 @@ body {
   color: #c67412;
 }
 .menu-2__subtitle.subtitle-1:before, .menu-2__subtitle.subtitle-1:after {
-  content: url("/public/img/ligne_menu2-1.png");
+  content: url("../public/img/ligne_menu2-1.png");
 }
 .menu-2__subtitle.subtitle-2 {
   color: #a56799;
@@ -515,7 +515,7 @@ body {
   padding: 50px 0 20px;
 }
 .menu-3__subtitle.subtitle-1:before, .menu-3__subtitle.subtitle-1:after {
-  content: url("/public/img/ligne_menu3-1.png");
+  content: url("../public/img/ligne_menu3-1.png");
 }
 .menu-3__subtitle.subtitle-2:before, .menu-3__subtitle.subtitle-2:after {
   content: url("/public/img/ligne_menu3-2.png");
@@ -590,7 +590,7 @@ body {
   padding: 50px 0 20px;
 }
 .menu-4__subtitle:before, .menu-4__subtitle:after {
-  content: url("/public/img/ligne_menu4.png");
+  content: url("../public/img/ligne_menu4.png");
 }
 .menu-4__subtitle:before {
   float: left;

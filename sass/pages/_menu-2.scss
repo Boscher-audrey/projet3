@@ -30,7 +30,7 @@
         color: $colour-text-menu-2-middle;
       }
       &:before, &:after {
-        content: url("/public/img/ligne_menu2-2.png");
+        content: url("../public/img/ligne_menu2-2.png");
       }
     }
 
@@ -40,7 +40,7 @@
         color: $colour-text-menu-2-secondary;
       }
       &:before, &:after {
-        content: url("/public/img/ligne_menu2-3.png");
+        content: url("../public/img/ligne_menu2-3.png");
       }
     }
 

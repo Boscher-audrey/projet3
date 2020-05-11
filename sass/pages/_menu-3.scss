@@ -1,0 +1,95 @@
+.menu-3 {
+  background: $colour-menu-3;
+  margin-top: $header-height/2;
+  margin-bottom: $footer-height*2;
+  @include menu_padding;
+  color: black;
+
+  &-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: $menu-grid-height;
+  }
+
+  &__subtitle {
+    padding: 50px 0 20px;
+
+    &.subtitle-1 {
+      &:before, &:after {
+        content: url("/public/img/ligne_menu3-1.png");
+      }
+    }
+
+    &.subtitle-2 {
+      &:before, &:after {
+        content: url("/public/img/ligne_menu3-2.png");
+      }
+    }
+
+    &.subtitle-3 {
+      &:before, &:after {
+        content: url("/public/img/ligne_menu3-3.png");
+      }
+    }
+
+    &:before {
+      float: left;
+      margin-right: 15px;
+    }
+
+    &:after {
+      float: right;
+      margin-left: 15px;
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+    }
+
+    &-underline {
+      float: none !important;
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: black;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+      }
+      &:hover:before {
+        visibility: visible;
+        width: 100%;
+      }
+    }
+  }
+
+  & h1, h2, h3 {
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__image {
+    line-height: 0;
+    text-align: center;
+
+    & i {
+      font-size: 65px;
+    }
+  }
+
+  p {
+    padding: 0 50px;
+  }
+
+  span {
+    float: right;
+    font-weight: bold;
+  }
+
+}

@@ -90,7 +90,7 @@ body {
 // ------------
 
 .menu-1 {
-  color: $colour-text-menu-1;
+  color: black;
 
   &__heading {
     color: $colour-text-menu-1;
@@ -98,20 +98,18 @@ body {
 
   & h1 {
     font-family: $font-family__menu-1;
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     font-weight: normal;
   }
 
   & h2 {
     font-family: $font-family-secondary__menu-1;
     font-size: 1.5rem;
-    font-weight: normal;
+    font-weight: bold;
   }
 
-  & h3 {
-    font-family: $font-family__menu-1;
-    font-size: 1.6rem;
-    font-weight: normal;
+  p {
+    font-family: $font-family-secondary__menu-1;
   }
 
   & i {
@@ -124,22 +122,81 @@ body {
 // ------------
 
 .menu-2 {
-
   &__heading {
-
+    color: black;
   }
 
   & h1 {
     font-family: $font-family__menu-2;
     font-size: 2.3rem;
     font-weight: normal;
+    @include text_linear-gradient($colour-text-menu-2-primary, $colour-text-menu-2-secondary);
   }
 
   & h2 {
     font-family: $font-family-secondary__menu-2;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  p {
+    font-family: $font-family-secondary__menu-2;
+    line-height: 2rem;
+  }
+}
+
+// ------------
+// Menu 3
+// ------------
+
+.menu-3 {
+  &__heading {
+    color: black;
+  }
+
+  & h1 {
+    font-family: $font-family__menu-3;
+    font-size: 4rem;
+    font-weight: normal;
+    @include text_linear-gradient($colour-text-menu-3-primary, $colour-text-menu-3-secondary);
+  }
+
+  & h2 {
+    font-family: $font-family-secondary__menu-3;
+    font-size: 1.2rem;
     font-weight: normal;
   }
 
+  p {
+    font-family: $font-family-secondary__menu-3;
+    line-height: 2rem;
+  }
+}
 
+// ------------
+// Menu 4
+// ------------
+
+.menu-4 {
+  &__heading {
+    color: black;
+  }
+
+  & h1 {
+    font-family: $font-family__menu-4;
+    font-size: 4rem;
+    font-weight: normal;
+    @include text_linear-gradient($colour-text-menu-4-primary, $colour-text-menu-4-secondary);
+  }
+
+  & h2 {
+    font-family: $font-family-secondary__menu-4;
+    font-size: 1.2rem;
+    font-weight: normal;
+  }
+
+  p {
+    font-family: $font-family-secondary__menu-4;
+    line-height: 2rem;
+  }
 }

@@ -14,3 +14,11 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+@mixin menu_padding {
+  padding: 45px 4% 130px;
+}
+
+@mixin menu_margin {
+  margin-top: 45px;
+}

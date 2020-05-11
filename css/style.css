@@ -2,6 +2,10 @@
   margin: 0;
 }
 
+.container {
+  margin-top: 120px;
+}
+
 a {
   text-decoration: none;
   color: currentColor;
@@ -17,15 +21,35 @@ a {
   -webkit-transform: scale(1.15);
   /* Safari 3-8 */
   transform: scale(1.15);
+  opacity: 0.6;
 }
 
+.wiggle:hover {
+  animation: wiggle 0.6s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate(0, 0);
+}
+
+@keyframes wiggle {
+  10%, 90% {
+    transform: translate(-1px, 0);
+  }
+  20%, 80% {
+    transform: translate(2px, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate(-4px, 0);
+  }
+  40%, 60% {
+    transform: translate(4px, 0);
+  }
+}
 body {
   font-family: "Open Sans", sans-serif;
   color: #fdcb46 !important;
 }
 
 .menu-index-1 {
-  color: black;
+  color: #3d1319;
 }
 .menu-index-1 h1 {
   font-family: "Segoe Print", sans-serif;
@@ -43,14 +67,14 @@ body {
 }
 .menu-index-2 h1 {
   font-family: "Georgia", serif;
-  color: #c77412;
+  color: #c67412;
   font-size: 1.5rem;
 }
 .menu-index-2 h2 {
   font-family: "Croissant One", cursive;
   font-weight: normal;
   font-size: 1rem;
-  background: -webkit-linear-gradient(left, #c77412 0%, #905bfd 100%);
+  background: -webkit-linear-gradient(left, #c67412 0%, #6e4ccc 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -87,22 +111,20 @@ body {
   color: black;
 }
 .menu-1__heading {
-  color: black;
+  color: #3d1319;
 }
 .menu-1 h1 {
   font-family: "Devonshire", cursive;
-  font-size: 2.3rem;
+  font-size: 2.5rem;
   font-weight: normal;
 }
 .menu-1 h2 {
   font-family: "Segoe Print", sans-serif;
   font-size: 1.5rem;
-  font-weight: normal;
+  font-weight: bold;
 }
-.menu-1 h3 {
-  font-family: "Devonshire", cursive;
-  font-size: 1.6rem;
-  font-weight: normal;
+.menu-1 p {
+  font-family: "Segoe Print", sans-serif;
 }
 .menu-1 i {
   background: -webkit-linear-gradient(left, #f04a5e 0%, #f78f6a 100%);
@@ -110,21 +132,76 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.menu-2__heading {
+  color: black;
+}
 .menu-2 h1 {
   font-family: "Croissant One", cursive;
   font-size: 2.3rem;
   font-weight: normal;
+  background: -webkit-linear-gradient(left, #c67412 0%, #6e4ccc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .menu-2 h2 {
   font-family: "Georgia", serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.menu-2 p {
+  font-family: "Georgia", serif;
+  line-height: 2rem;
+}
+
+.menu-3__heading {
+  color: black;
+}
+.menu-3 h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 4rem;
   font-weight: normal;
+  background: -webkit-linear-gradient(left, #0431df 0%, #1b91fa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu-3 h2 {
+  font-family: "Segoe Print", sans-serif;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+.menu-3 p {
+  font-family: "Segoe Print", sans-serif;
+  line-height: 2rem;
+}
+
+.menu-4__heading {
+  color: black;
+}
+.menu-4 h1 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 4rem;
+  font-weight: normal;
+  background: -webkit-linear-gradient(left, #3d9339 0%, #bfff7e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu-4 h2 {
+  font-family: "Segoe Print", sans-serif;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+.menu-4 p {
+  font-family: "Segoe Print", sans-serif;
+  line-height: 2rem;
 }
 
 .header {
   background: #579c87;
   display: flex;
   width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
   height: 120px;
   line-height: 120px;
 }
@@ -146,6 +223,34 @@ body {
 .footer__link-right, .footer__link-left {
   font-size: 1.7647058824rem;
   margin: 0 35px;
+}
+
+.mentions-legales-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+  color: black;
+}
+.mentions-legales-grid .mentions-legales {
+  padding: 45px 25%;
+  margin-bottom: 70.5882352941px;
+  text-align: justify;
+}
+.mentions-legales-grid .mentions-legales h1, .mentions-legales-grid .mentions-legales h2 {
+  text-transform: uppercase;
+}
+.mentions-legales-grid .mentions-legales h2 {
+  font-size: 1.2rem;
+}
+.mentions-legales-grid .mentions-legales p {
+  padding-bottom: 20px;
+}
+.mentions-legales-grid .mentions-legales a {
+  color: #579c87;
+}
+.mentions-legales-grid .mentions-legales a:hover {
+  color: #fdcb46;
 }
 
 .menu-grid {
@@ -234,14 +339,50 @@ body {
 }
 .menu-1 {
   background: #fcdfdb;
-  padding: 45px 70px;
+  margin-top: 60px;
+  margin-bottom: 141.1764705882px;
+  padding: 45px 4% 130px;
 }
 .menu-1-grid {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 600px;
-  margin-top: 55px;
+}
+.menu-1__subtitle {
+  padding: 50px 0 10px;
+}
+.menu-1__subtitle:before, .menu-1__subtitle:after {
+  content: url("/public/img/ligne_menu1.png");
+}
+.menu-1__subtitle:before {
+  float: left;
+  margin-right: 15px;
+}
+.menu-1__subtitle:after {
+  float: right;
+  margin-left: 15px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.menu-1__subtitle-underline {
+  float: none !important;
+  position: relative;
+}
+.menu-1__subtitle-underline:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #3d1319;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.menu-1__subtitle-underline:hover:before {
+  visibility: visible;
+  width: 100%;
 }
 .menu-1 h1, .menu-1 h2, .menu-1 h3 {
   text-align: center;
@@ -253,20 +394,251 @@ body {
 .menu-1__image i {
   font-size: 65px;
 }
+.menu-1 span {
+  float: right;
+  font-weight: bold;
+}
 
 .menu-2 {
   background: #fff5fe;
-  padding: 45px 70px;
+  margin-top: 60px;
+  margin-bottom: 141.1764705882px;
+  padding: 45px 4% 130px;
 }
 .menu-2-grid {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 600px;
-  margin-top: 55px;
+}
+.menu-2__subtitle {
+  padding: 50px 0 20px;
+}
+.menu-2__subtitle.subtitle-1 {
+  color: #c67412;
+}
+.menu-2__subtitle.subtitle-1 ~ p {
+  color: #c67412;
+}
+.menu-2__subtitle.subtitle-1:before, .menu-2__subtitle.subtitle-1:after {
+  content: url("/public/img/ligne_menu2-1.png");
+}
+.menu-2__subtitle.subtitle-2 {
+  color: #a56799;
+}
+.menu-2__subtitle.subtitle-2 ~ p {
+  color: #a56799;
+}
+.menu-2__subtitle.subtitle-2:before, .menu-2__subtitle.subtitle-2:after {
+  content: url("/public/img/ligne_menu2-2.png");
+}
+.menu-2__subtitle.subtitle-3 {
+  color: #6e4ccc;
+}
+.menu-2__subtitle.subtitle-3 ~ p {
+  color: #6e4ccc;
+}
+.menu-2__subtitle.subtitle-3:before, .menu-2__subtitle.subtitle-3:after {
+  content: url("/public/img/ligne_menu2-3.png");
+}
+.menu-2__subtitle:before {
+  float: left;
+  margin-right: 15px;
+}
+.menu-2__subtitle:after {
+  float: right;
+  margin-left: 15px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.menu-2__subtitle-underline {
+  float: none !important;
+  position: relative;
+}
+.menu-2__subtitle-underline:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.menu-2__subtitle-underline.underline-1:before {
+  background-color: #c67412;
+}
+.menu-2__subtitle-underline.underline-2:before {
+  background-color: #a56799;
+}
+.menu-2__subtitle-underline.underline-3:before {
+  background-color: #6e4ccc;
+}
+.menu-2__subtitle-underline:hover:before {
+  visibility: visible;
+  width: 100%;
 }
 .menu-2 h1, .menu-2 h2, .menu-2 h3 {
   text-align: center;
+}
+.menu-2__title {
+  margin-bottom: 30px;
+}
+.menu-2__image {
+  line-height: 0;
+  text-align: center;
+}
+.menu-2__image i {
+  font-size: 65px;
+}
+.menu-2 p {
+  padding: 0 50px;
+}
+.menu-2 span {
+  float: right;
+}
+
+.menu-3 {
+  background: #f9f9f9;
+  margin-top: 60px;
+  margin-bottom: 141.1764705882px;
+  padding: 45px 4% 130px;
+  color: black;
+}
+.menu-3-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+}
+.menu-3__subtitle {
+  padding: 50px 0 20px;
+}
+.menu-3__subtitle.subtitle-1:before, .menu-3__subtitle.subtitle-1:after {
+  content: url("/public/img/ligne_menu3-1.png");
+}
+.menu-3__subtitle.subtitle-2:before, .menu-3__subtitle.subtitle-2:after {
+  content: url("/public/img/ligne_menu3-2.png");
+}
+.menu-3__subtitle.subtitle-3:before, .menu-3__subtitle.subtitle-3:after {
+  content: url("/public/img/ligne_menu3-3.png");
+}
+.menu-3__subtitle:before {
+  float: left;
+  margin-right: 15px;
+}
+.menu-3__subtitle:after {
+  float: right;
+  margin-left: 15px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.menu-3__subtitle-underline {
+  float: none !important;
+  position: relative;
+}
+.menu-3__subtitle-underline:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.menu-3__subtitle-underline:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+.menu-3 h1, .menu-3 h2, .menu-3 h3 {
+  text-align: center;
+}
+.menu-3__title {
+  margin-bottom: 30px;
+}
+.menu-3__image {
+  line-height: 0;
+  text-align: center;
+}
+.menu-3__image i {
+  font-size: 65px;
+}
+.menu-3 p {
+  padding: 0 50px;
+}
+.menu-3 span {
+  float: right;
+  font-weight: bold;
+}
+
+.menu-4 {
+  background: #fdfffd;
+  margin-top: 60px;
+  margin-bottom: 141.1764705882px;
+  padding: 45px 4% 130px;
+  color: black;
+}
+.menu-4-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+}
+.menu-4__subtitle {
+  padding: 50px 0 20px;
+}
+.menu-4__subtitle:before, .menu-4__subtitle:after {
+  content: url("/public/img/ligne_menu4.png");
+}
+.menu-4__subtitle:before {
+  float: left;
+  margin-right: 15px;
+}
+.menu-4__subtitle:after {
+  float: right;
+  margin-left: 15px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.menu-4__subtitle-underline {
+  float: none !important;
+  position: relative;
+}
+.menu-4__subtitle-underline:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.menu-4__subtitle-underline:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+.menu-4 h1, .menu-4 h2, .menu-4 h3 {
+  text-align: center;
+}
+.menu-4__title {
+  margin-bottom: 30px;
+}
+.menu-4__image {
+  line-height: 0;
+  text-align: center;
+}
+.menu-4__image i {
+  font-size: 65px;
+}
+.menu-4 p {
+  padding: 0 50px;
+}
+.menu-4 span {
+  float: right;
 }
 
 /*# sourceMappingURL=style.css.map */

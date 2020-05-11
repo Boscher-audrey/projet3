@@ -2,6 +2,10 @@
   margin: 0;
 }
 
+.container {
+  margin-top: $header-height;
+}
+
 a {
   text-decoration: none;
   color: currentColor;
@@ -15,5 +19,29 @@ a {
     -ms-transform: scale(1.15); /* IE 9 */
     -webkit-transform: scale(1.15); /* Safari 3-8 */
     transform: scale(1.15);
+    opacity: 0.6;
+  }
+}
+
+.wiggle:hover {
+  animation: wiggle 0.6s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate(0, 0);
+}
+
+@keyframes wiggle {
+  10%, 90% {
+    transform: translate(-1px, 0);
+  }
+
+  20%, 80% {
+    transform: translate(2px, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate(-4px, 0);
+  }
+
+  40%, 60% {
+    transform: translate(4px, 0);
   }
 }

@@ -1,18 +1,113 @@
 .menu-2 {
   background: $colour-menu-2;
-  padding: 45px 70px;
+  margin-top: $header-height/2;
+  margin-bottom: $footer-height*2;
+  @include menu_padding;
 
   &-grid {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: $menu-grid-height;
-    margin-top: 55px;
+  }
+
+  &__subtitle {
+    padding: 50px 0 20px;
+
+    &.subtitle-1 {
+      color: $colour-text-menu-2-primary;
+      & ~ p {
+        color: $colour-text-menu-2-primary;
+      }
+      &:before, &:after {
+        content: url("/public/img/ligne_menu2-1.png");
+      }
+    }
+
+    &.subtitle-2 {
+      color: $colour-text-menu-2-middle;
+      & ~ p {
+        color: $colour-text-menu-2-middle;
+      }
+      &:before, &:after {
+        content: url("/public/img/ligne_menu2-2.png");
+      }
+    }
+
+    &.subtitle-3 {
+      color: $colour-text-menu-2-secondary;
+      & ~ p {
+        color: $colour-text-menu-2-secondary;
+      }
+      &:before, &:after {
+        content: url("/public/img/ligne_menu2-3.png");
+      }
+    }
+
+    &:before {
+      float: left;
+      margin-right: 15px;
+    }
+
+    &:after {
+      float: right;
+      margin-left: 15px;
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+    }
+
+    &-underline {
+      float: none !important;
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+      }
+      &.underline-1:before {
+        background-color: $colour-text-menu-2-primary;
+      }
+      &.underline-2:before {
+        background-color: $colour-text-menu-2-middle;
+      }
+      &.underline-3:before {
+        background-color: $colour-text-menu-2-secondary;
+      }
+      &:hover:before {
+        visibility: visible;
+        width: 100%;
+      }
+    }
   }
 
   & h1, h2, h3 {
     text-align: center;
   }
 
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__image {
+    line-height: 0;
+    text-align: center;
+
+    & i {
+      font-size: 65px;
+    }
+  }
+
+  p {
+    padding: 0 50px;
+  }
+
+  span {
+    float: right;
+  }
 
 }

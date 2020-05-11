@@ -1,9 +1,10 @@
 $colour-primary: #579c87;
 $colour-secondary: #fdcb46;
 $colour-menu-1: #fcdfdb;
-$colour-text-menu-1: black;
-$colour-text-menu-2-primary: #c77412;
-$colour-text-menu-2-secondary: #905bfd;
+$colour-text-menu-1: #3d1319;
+$colour-text-menu-2-primary: #c67412;
+$colour-text-menu-2-middle: #a56799;
+$colour-text-menu-2-secondary: #6e4ccc;
 $colour-text-menu-3-primary: #0431df;
 $colour-text-menu-3-secondary: #1b91fa;
 $colour-text-menu-4-primary: #3d9339;
@@ -22,6 +23,7 @@ $footer-font-size: $header-font-size/1.7;
 
 $menu-grid-height: 600px;
 $prochainement_margin: $footer-height + 50px;
+
 
 @media (max-width: 767px) {
   $header-height: 15vh;

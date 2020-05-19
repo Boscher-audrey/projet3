@@ -5,9 +5,18 @@
   position: fixed;
   top: 0;
   z-index: 1;
-  @include vertical-center-text($header-height); // doit aller dans typo
+  @include vertical-center-text($header-height);
   &__logo {
     margin: auto;
-    font-size: $header-font-size; // doit aller dans typo
+    font-size: $header-font-size;
+  }
+}
+
+@media only screen and (max-width: 649px) {
+  .header {
+    @include vertical-center-text(80px);
+  }
+  .header__logo {
+    font-size: 2rem;
   }
 }

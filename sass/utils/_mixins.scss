@@ -22,3 +22,15 @@
 @mixin menu_margin {
   margin-top: 45px;
 }
+
+@mixin menu-grid-height {
+  @media only screen and (min-width: 1281px) {
+    height: 600px;
+  }
+  @media only screen and (min-width: 650px) and (max-width: 1280px) {
+    height: 860px;
+  }
+  @media only screen and (max-width: 649px) {
+    height: 1600px;
+  }
+}

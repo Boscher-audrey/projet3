@@ -4,7 +4,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    height: $menu-grid-height;
+    @include menu-grid-height;
   }
 
   &-index {
@@ -18,7 +18,7 @@
       justify-content: center;
       line-height: 45px;
       font-size: 0.8rem;
-      height: -webkit-fill-available;
+      height: inherit;
       @include box_shadow;
     }
 
@@ -44,6 +44,7 @@
 .menu-index-1__image {
   line-height: 0;
   margin-bottom: -10px;
+
   & i {
     font-size: 25px;
   }
@@ -66,11 +67,11 @@
     }
 
     &-dot {
-      display:inline-block;
-      width:5px;
-      height:5px;
-      border-radius:50%;
-      margin-left:3px;
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      margin-left: 3px;
       background: $colour-secondary;
       animation: wave 1.2s linear infinite;
 
@@ -85,6 +86,12 @@
   }
 }
 
+.responsive-top-menu, .responsive-bot-menu {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
 @keyframes wave {
   0%, 50%, 100% {
     transform: initial;
@@ -92,5 +99,34 @@
 
   30% {
     transform: translateY(-8px);
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .menu-grid {
+    flex-direction: column;
+  }
+  .responsive-top-menu, .responsive-bot-menu {
+    width: 620px;
+  }
+
+}
+
+@media only screen and (max-width: 649px) {
+  .menu-grid {
+    padding-bottom: 25px;
+  }
+  .responsive-top-menu, .responsive-bot-menu {
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+    height: 800px;
+    justify-content: space-around;
+  }
+  .prochainement__btn {
+    width: 260px;
+  }
+  .prochainement__btn-text {
+    font-size: 1.2rem;
   }
 }

@@ -21,9 +21,7 @@ $header-font-size: 3rem;
 $footer-height: $header-height/1.7;
 $footer-font-size: $header-font-size/1.7;
 
-$menu-grid-height: 600px;
 $prochainement_margin: $footer-height + 50px;
-
 
 @media (max-width: 767px) {
   $header-height: 15vh;

@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: $menu-grid-height;
+    @include menu-grid-height;
   }
 
   &__subtitle {
@@ -79,4 +79,55 @@
     float: right;
   }
 
+}
+
+
+@media only screen and (max-width: 1280px) {
+  .menu-4 {
+    & h1 {
+      font-size: 2rem;
+    }
+
+    & h2 {
+      font-size: 1.3rem;
+    }
+
+    &__image i {
+      font-size: 50px;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .menu-4 {
+    padding: 10% 4% 25%;
+    margin: 0;
+    margin-top: -45px;
+
+    & p {
+      text-align: center;
+      line-height: 1.5rem;
+      margin-bottom: 1.5rem;
+
+      & span {
+        display: block;
+        float: none;
+      }
+    }
+
+    &-grid {
+      height: auto;
+    }
+  }
+  .menu-4__subtitle {
+    padding: 15px 0 10px;
+
+    &:before, &:after {
+      content: '';
+    }
+
+    &-underline {
+      text-decoration: underline;
+    }
+  }
 }

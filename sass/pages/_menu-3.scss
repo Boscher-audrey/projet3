@@ -1,7 +1,8 @@
 .menu-3 {
   background: $colour-menu-3;
-  margin-top: $header-height/2;
+  margin-top: 20px;
   margin-bottom: $footer-height*2;
+  @include box_shadow;
   @include menu_padding;
   color: black;
 

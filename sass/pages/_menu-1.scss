@@ -1,8 +1,10 @@
 .menu-1 {
   background: $colour-menu-1;
-  margin-top: $header-height/2;
+  margin-top: 20px;
   margin-bottom: $footer-height*2;
+  @include box_shadow;
   @include menu_padding;
+  padding-bottom: 80px;
 
   &-grid {
     display: flex;
@@ -63,6 +65,18 @@
 
     & i {
       font-size: 65px;
+    }
+
+    &-bot {
+      justify-content: center;
+      margin-top: 50px;
+      display: flex;
+      flex-direction: row;
+
+      & i {
+        font-size: 45px;
+        margin-right: 10px;
+      }
     }
   }
 

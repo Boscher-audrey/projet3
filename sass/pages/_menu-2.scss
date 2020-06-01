@@ -1,7 +1,8 @@
 .menu-2 {
   background: $colour-menu-2;
-  margin-top: $header-height/2;
+  margin-top: 20px;
   margin-bottom: $footer-height*2;
+  @include box_shadow;
   @include menu_padding;
 
   &-grid {

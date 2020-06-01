@@ -6,6 +6,11 @@
   margin-top: $header-height;
 }
 
+.menu-bigtitle {
+  color: black;
+  margin-top: $header-height/2;
+}
+
 a {
   text-decoration: none;
   color: currentColor;
@@ -43,5 +48,11 @@ a {
 
   40%, 60% {
     transform: translate(4px, 0);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .menu-bigtitle {
+    display: none;
   }
 }

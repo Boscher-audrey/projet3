@@ -6,6 +6,11 @@
   margin-top: 120px;
 }
 
+.menu-bigtitle {
+  color: black;
+  margin-top: 60px;
+}
+
 a {
   text-decoration: none;
   color: currentColor;
@@ -41,6 +46,11 @@ a {
   }
   40%, 60% {
     transform: translate(4px, 0);
+  }
+}
+@media only screen and (max-width: 767px) {
+  .menu-bigtitle {
+    display: none;
   }
 }
 body {
@@ -122,6 +132,11 @@ body {
   font-family: "Segoe Print", sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
+}
+.menu-1 h3 {
+  font-family: "Devonshire", cursive;
+  font-size: 2.2rem;
+  font-weight: normal;
 }
 .menu-1 p {
   font-family: "Segoe Print", sans-serif;
@@ -283,16 +298,11 @@ body {
 }
 .menu-grid {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
-@media only screen and (min-width: 1281px) {
-  .menu-grid {
-    height: 600px;
-  }
-}
-@media only screen and (min-width: 650px) and (max-width: 1280px) {
+@media only screen and (min-width: 650px) {
   .menu-grid {
     height: 860px;
   }
@@ -374,7 +384,7 @@ body {
 .responsive-top-menu, .responsive-bot-menu {
   display: flex;
   justify-content: space-around;
-  width: 50%;
+  width: 620px;
 }
 
 @keyframes wave {
@@ -383,15 +393,6 @@ body {
   }
   30% {
     transform: translateY(-8px);
-  }
-}
-@media only screen and (max-width: 1280px) {
-  .menu-grid {
-    flex-direction: column;
-  }
-
-  .responsive-top-menu, .responsive-bot-menu {
-    width: 620px;
   }
 }
 @media only screen and (max-width: 649px) {
@@ -417,21 +418,20 @@ body {
 }
 .menu-1 {
   background: #fcdfdb;
-  margin-top: 60px;
+  margin-top: 20px;
   margin-bottom: 141.1764705882px;
+  -webkit-box-shadow: 0 0 20px 2px #fcdfdb;
+  -moz-box-shadow: 0 0 20px 2px #fcdfdb;
+  box-shadow: 0 0 20px 2px #fcdfdb;
   padding: 45px 4% 130px;
+  padding-bottom: 80px;
 }
 .menu-1-grid {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-@media only screen and (min-width: 1281px) {
-  .menu-1-grid {
-    height: 600px;
-  }
-}
-@media only screen and (min-width: 650px) and (max-width: 1280px) {
+@media only screen and (min-width: 650px) {
   .menu-1-grid {
     height: 860px;
   }
@@ -486,6 +486,16 @@ body {
 .menu-1__image i {
   font-size: 65px;
 }
+.menu-1__image-bot {
+  justify-content: center;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+}
+.menu-1__image-bot i {
+  font-size: 45px;
+  margin-right: 10px;
+}
 .menu-1 span {
   float: right;
   font-weight: bold;
@@ -533,8 +543,11 @@ body {
 }
 .menu-2 {
   background: #fff5fe;
-  margin-top: 60px;
+  margin-top: 20px;
   margin-bottom: 141.1764705882px;
+  -webkit-box-shadow: 0 0 20px 2px #fcdfdb;
+  -moz-box-shadow: 0 0 20px 2px #fcdfdb;
+  box-shadow: 0 0 20px 2px #fcdfdb;
   padding: 45px 4% 130px;
 }
 .menu-2-grid {
@@ -542,12 +555,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
-@media only screen and (min-width: 1281px) {
-  .menu-2-grid {
-    height: 600px;
-  }
-}
-@media only screen and (min-width: 650px) and (max-width: 1280px) {
+@media only screen and (min-width: 650px) {
   .menu-2-grid {
     height: 860px;
   }
@@ -686,8 +694,11 @@ body {
 }
 .menu-3 {
   background: #f9f9f9;
-  margin-top: 60px;
+  margin-top: 20px;
   margin-bottom: 141.1764705882px;
+  -webkit-box-shadow: 0 0 20px 2px #fcdfdb;
+  -moz-box-shadow: 0 0 20px 2px #fcdfdb;
+  box-shadow: 0 0 20px 2px #fcdfdb;
   padding: 45px 4% 130px;
   color: black;
 }
@@ -696,12 +707,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
-@media only screen and (min-width: 1281px) {
-  .menu-3-grid {
-    height: 600px;
-  }
-}
-@media only screen and (min-width: 650px) and (max-width: 1280px) {
+@media only screen and (min-width: 650px) {
   .menu-3-grid {
     height: 860px;
   }
@@ -815,8 +821,11 @@ body {
 }
 .menu-4 {
   background: #fdfffd;
-  margin-top: 60px;
+  margin-top: 20px;
   margin-bottom: 141.1764705882px;
+  -webkit-box-shadow: 0 0 20px 2px #fcdfdb;
+  -moz-box-shadow: 0 0 20px 2px #fcdfdb;
+  box-shadow: 0 0 20px 2px #fcdfdb;
   padding: 45px 4% 130px;
   color: black;
 }
@@ -825,12 +834,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
-@media only screen and (min-width: 1281px) {
-  .menu-4-grid {
-    height: 600px;
-  }
-}
-@media only screen and (min-width: 650px) and (max-width: 1280px) {
+@media only screen and (min-width: 650px) {
   .menu-4-grid {
     height: 860px;
   }
